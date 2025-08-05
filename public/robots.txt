@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://get-a-developer.buttnetworks.com
+
+# Sitemaps
+Sitemap: https://get-a-developer.buttnetworks.com/sitemap.xml
