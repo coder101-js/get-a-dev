@@ -26,7 +26,7 @@ const Navbar = () => {
           {session?.user && (
             <li className="relative group">
               <Image
-                src={session.user.image}
+                src={session?.user?.image}
                 alt="avatar"
                 width={36}
                 height={36}

@@ -163,15 +163,17 @@ const ProfileForm = () => {
             <div className="flex flex-col items-center space-y-3">
               <Image
                 src={
-                  formData.ImageURL?.startsWith('http') || formData.ImageURL?.startsWith('/')
+                  typeof formData.ImageURL === 'string' &&
+                    (formData.ImageURL.startsWith('http') || formData.ImageURL.startsWith('/'))
                     ? formData.ImageURL
                     : '/default-profile.png'
                 }
                 alt="Profile Image"
                 width={100}
                 height={100}
-                className="rounded-full"
+                className="rounded-full object-cover"
               />
+
 
               <h2 className="text-xl font-bold">{formData.Name}</h2>
               <p className="text-sm text-gray-400">{formData.Role}</p>
